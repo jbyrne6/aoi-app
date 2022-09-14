@@ -10,6 +10,7 @@
     "vite": "^3.0.9"
   },
   "dependencies": {
+    "@turf/turf": "^6.5.0",
     "ol": "latest"
   }
 }
