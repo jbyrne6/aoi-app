@@ -1,18 +1,14 @@
-# OpenLayers + Vite
+# AOI APP
 
-This example demonstrates how the `ol` package can be used with [Vite](https://vitejs.dev/).
+## To get started, follow these steps (requires Node 14+):
+1. clone this repository
 
-To get started, run the following (requires Node 14+):
+### set up and run the node.js server
+2. navigate to inside the `api` folder
+3. run the command `npm install` to install dependencies
+4. run the command `npm start` to start the node.js backend
 
-    npx create-ol-app my-app --template vite
-
-Then change into your new `my-app` directory and start a development server (available at http://localhost:5173):
-
-    cd my-app
-    npm start
-
-To generate a build ready for production:
-
-    npm run build
-
-Then deploy the contents of the `dist` directory to your server.  You can also run `npm run serve` to serve the results of the `dist` directory for preview.
+### set up and run the frontend express server
+5. go back to the root folder and navigate to inside the `client` folder
+6. run the command `npm install` to install dependencies
+7. run the command `npm start` to start the app
