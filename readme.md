@@ -12,3 +12,6 @@
 5. go back to the root folder and navigate to inside the `client` folder
 6. run the command `npm install` to install dependencies
 7. run the command `npm start` to start the app
+
+### see the app
+8. navigate to [http://127.0.0.1:5173/](http://127.0.0.1:5173/) to see the running application
