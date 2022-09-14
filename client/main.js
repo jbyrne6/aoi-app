@@ -6,7 +6,6 @@ import {Circle as CircleStyle, Fill, Stroke, Style} from 'ol/style';
 import {OSM, Vector as VectorSource} from 'ol/source';
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer';
 import {fromLonLat} from 'ol/proj';
-import ZoomToExtent from 'ol/control/ZoomToExtent';
 import { featureCollection, multiPoint, multiPolygon } from '@turf/helpers';
 
 // get the AOI
@@ -48,6 +47,7 @@ const vectorLayer = new VectorLayer({
   style: styleFunction,
 });
 
+// construct the map
 const map = new Map({
   target: 'map',
   layers: [
@@ -57,8 +57,10 @@ const map = new Map({
     vectorLayer
   ],
   view: new View({
-    extent: featureExtent,
     center: [0, 0],
     zoom: 2
   })
 });
+
+// set the zoom level to the feature being displayed
+map.getView().fit(featureExtent);
