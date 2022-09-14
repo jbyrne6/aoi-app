@@ -1,3 +1,4 @@
+[Coding exercise.pdf](https://github.com/jbyrne6/aoi-app/files/9563234/Coding.exercise.pdf)
 # AOI APP
 
 ## To get started, follow these steps (requires Node 14+):
